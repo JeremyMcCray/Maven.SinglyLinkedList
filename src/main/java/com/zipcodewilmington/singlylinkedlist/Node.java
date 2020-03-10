@@ -1,6 +1,5 @@
 package com.zipcodewilmington.singlylinkedlist;
 
-import java.util.LinkedList;
 
 public class Node {
     String nodeInfo;

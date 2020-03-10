@@ -235,4 +235,23 @@ public class SinglyLinkedListTest {
 
         Assert.assertEquals(expected,actual);
     }
+
+    @Test
+    public void copyTest1(){
+
+        SinglyLinkedList test = list.copy();
+
+
+
+        Assert.assertEquals( list.getFirstNode(),test.getFirstNode());
+    }
+    @Test
+    public void copyTest2(){
+
+        SinglyLinkedList test = list.copy();
+
+
+
+        Assert.assertEquals( list.getLastNode(),test.getLastNode());
+    }
 }

@@ -106,4 +106,18 @@ public class SinglyLinkedList {
         }
         return null;
     }
+
+    public SinglyLinkedList copy(){
+        SinglyLinkedList answer = new SinglyLinkedList();
+        Node currentNode = first;
+
+        for (int i = 0; i < size ; i++) {
+            answer.addNode(currentNode);
+            if(!(currentNode.getNextNode() == null)){
+
+            currentNode = currentNode.getNextNode();
+        }
+        }
+        return answer;
+    }
 }
